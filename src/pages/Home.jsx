@@ -14,7 +14,7 @@ const Home = () => {
 
   const buscaDados = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/dados/');
+      const response = await fetch('http://localhost:5000/dados');
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
